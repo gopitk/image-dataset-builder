@@ -33,11 +33,11 @@ After signup you will see a link to fetch the API Key you will use below while m
 There is only one single Python file as we use fast.ai which offers convenience wrapper and good examples to get started
 
 ```
-python get_dataset_from_bing.py  --classifier [[Top level Class ]] --subclasses [[Comma separated list of subclasses] --key [[ Your Cognitive Services Key ]]
+python get_dataset_from_bing.py  --classifier [[Top level Class ]] --subclasses [[Comma separated list of subclasses] --numimages NN --key [[ Your Cognitive Services Key ]] --nosuffix 
 ```
-Here is an example for a Bear detector app where you can gather images of different bear subclasses (Grizzly, Brown, Teddy). The top level class is "bear". The program will search Bing for "Grizzly Bear", "Brown Bear" and "Teddy Bear"
+Here is an example for a Bear detector app where you can gather images of different bear subclasses (Grizzly, BLack, Teddy). The top level class is "bear". The program will search Bing for "Grizzly Bear", "Black Bear" and "Teddy Bear" unless the --nosuffix is specifed where just the subclass (without suffix with the top level class) will be searched. 
 ```
-python get_dataset_from_bing.py  --classifier bear --subclasses grizzly,brown,teddy --key [[You API Key]]
+python get_dataset_from_bing.py  --classifier bear --subclasses grizzly,brown,teddy --numimages 50 --key [[You API Key]]
 
 ```
 
