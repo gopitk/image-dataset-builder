@@ -15,7 +15,6 @@ conda env create -f environment.yml
 conda activate fastai2
 pip install fastai2
 pip install azure-cognitiveservices-search-imagesearch
-pip[ install nbdev graphviz
 pip install nbdev graphviz
 ```
 
@@ -37,7 +36,7 @@ python get_dataset_from_bing.py  --classifier [[Top level Class ]] --subclasses 
 ```
 Here is an example for a Bear detector app where you can gather images of different bear subclasses (Grizzly, BLack, Teddy). The top level class is "bear". The program will search Bing for "Grizzly Bear", "Black Bear" and "Teddy Bear" unless the --nosuffix is specifed where just the subclass (without suffix with the top level class) will be searched. 
 ```
-python get_dataset_from_bing.py  --classifier bear --subclasses grizzly,brown,teddy --numimages 50 --key [[You API Key]]
+python get_dataset_from_bing.py  --classifier bear --subclasses grizzly,brown,teddy --numimages 50 --key [[Your API Key]]
 
 ```
 
